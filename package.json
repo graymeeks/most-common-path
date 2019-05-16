@@ -1,15 +1,16 @@
 {
-  "name": "chat-example",
+  "name": "three-path-sequence",
   "version": "0.0.0",
-  "description": "A chat example to showcase how to use `socket.io` with a static `express` server with `async` for control flow.",
+  "description": "Most common 3 path sequence",
   "main": "server.js",
   "repository": "",
-  "author": "Mostafa Eweda <mo.eweda@gmail.com>",
   "dependencies": {
     "async": "~0.2.8",
     "express": "~3.2.4",
     "fs-promise": "^2.0.2",
-    "jasmine": "^2.5.3",
-    "socket.io": "~0.9.14"
+    "jasmine": "^2.5.3"
+  },
+  "scripts": {
+    "test": "jasmine"
   }
 }

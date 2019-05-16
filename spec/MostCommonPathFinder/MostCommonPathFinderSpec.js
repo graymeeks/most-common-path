@@ -14,8 +14,8 @@ describe('Most Common 3 page Sequence', function(){
       
       it('searches onDisk for filepath param', function(done){
         var mySpy = new spyOn(fsp, 'readFile').and.returnValue(Promise.resolve('whocares'));
-        MostCommonPathFinder.findPath('banana').then(() => {
-          expect(mySpy).toHaveBeenCalledWith('banana', 'utf8')
+        MostCommonPathFinder.findPath('logFilePathStub').then(() => {
+          expect(mySpy).toHaveBeenCalledWith('logFilePathStub', 'utf8')
           done();
         }).catch(fail)
       })
